@@ -93,7 +93,7 @@ function App() {
         />
       )}
 
-      {!isGameStarted ? (
+      {/* {!isGameStarted ? (
         <PlayerProfileForm onSubmit={handleProfileSubmit} />
       ) : (
         <Canvas
@@ -119,7 +119,7 @@ function App() {
             </EffectComposer>
           )}
         </Canvas>
-      )}
+      )} */}
     </div>
   );
 }
