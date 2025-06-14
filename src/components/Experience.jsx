@@ -114,7 +114,7 @@ export const Experience = ({ downgradedPerformance = false, playerData,xpChange 
 
   return (
     <>
-      {/* <Map />
+      <Map />
       {players.map(({ state, joystick }) => (
         <CharacterController
           key={state.id}
@@ -141,7 +141,7 @@ export const Experience = ({ downgradedPerformance = false, playerData,xpChange 
       ))}
       {(isHost() ? hits : networkHits).map((h) => (
         <BulletHit key={h.id} {...h} onEnded={() => onHitEnded(h.id)} />
-      ))} */}
+      ))}
 
       <Environment preset="sunset" />
     </>
