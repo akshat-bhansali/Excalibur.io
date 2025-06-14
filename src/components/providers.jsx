@@ -23,7 +23,7 @@ export const config = getDefaultConfig({
   appName: 'Excallibur',
   projectId: 'YOUR_PROJECT_ID',
   chains: [mainnet, polygon, optimism, arbitrum, base,monadTestnet],
-  ssr: true, // If your dApp uses server side rendering (SSR)
+  ssr: false, // If your dApp uses server side rendering (SSR)
 });
 
 const queryClient = new QueryClient();

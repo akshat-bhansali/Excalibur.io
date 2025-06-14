@@ -6,8 +6,8 @@ import {Providers} from "./components/providers"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <Providers> */}
+    <Providers>
     <App />
-    {/* </Providers> */}
+    </Providers>
   </React.StrictMode>,
 )

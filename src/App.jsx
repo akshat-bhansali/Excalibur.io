@@ -94,8 +94,7 @@ function App() {
       )}
 
       {!isGameStarted ? (
-        // <PlayerProfileForm onSubmit={handleProfileSubmit} />
-        <div>hi</div>
+        <PlayerProfileForm onSubmit={handleProfileSubmit} />
       ) : (
         <Canvas
           shadows
