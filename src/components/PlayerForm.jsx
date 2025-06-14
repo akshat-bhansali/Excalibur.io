@@ -220,7 +220,7 @@ export const PlayerProfileForm = ({ onSubmit }) => {
           const profile = await getProfile(address);
           
           // Check if profile exists and has a name
-          if (!profile.isInitialized || !profile.name) {
+          if (!profile.name) {
             console.log('No profile or name not set');
             setShowCreateProfile(true);
             setIsProfileLoading(false);
@@ -232,7 +232,6 @@ export const PlayerProfileForm = ({ onSubmit }) => {
             username: profile.name,
             photo: profile.profileURI,
             xp: Number(profile.xp),
-            isInitialized: true,
             weaponBalances: profile.weaponBalances,
             skinsOwned: profile.skinsOwned
           });
@@ -288,16 +287,13 @@ export const PlayerProfileForm = ({ onSubmit }) => {
       // Fetch the updated profile
       const updatedProfile = await getProfile(address);
       
-      if (!updatedProfile.isInitialized) {
-        throw new Error("Profile initialization failed");
-      }
+    
 
       // Update states
       setProfileData({
         username: updatedProfile.name,
         photo: updatedProfile.profileURI,
         xp: Number(updatedProfile.xp),
-        isInitialized: true,
         weaponBalances: updatedProfile.weaponBalances,
         skinsOwned: updatedProfile.skinsOwned
       });

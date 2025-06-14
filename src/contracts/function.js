@@ -63,7 +63,6 @@ export const getProfile = async (address) => {
     name: profile.name,
     weaponBalances: profile.weaponBalances,
     skinsOwned: profile.skinsOwned,
-    isInitialized: profile.isInitialized
   };
 };
 
