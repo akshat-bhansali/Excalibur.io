@@ -1,4 +1,5 @@
 import { usePlayersList } from "playroomkit";
+import React from "react";
 
 export const Leaderboard = () => {
   const players = usePlayersList(true);

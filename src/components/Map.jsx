@@ -1,6 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 import { RigidBody } from "@react-three/rapier";
 import { useEffect } from "react";
+import React from "react";
 
 export const Map = () => {
   const map = useGLTF("models/map.glb");
