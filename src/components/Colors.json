@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Black",
+    "type": "black",
+    "imgUrl": "./charImage/black.png",
+    "id" : 1,
+    "price" : 5
+  },
+  {
+    "name": "Green",
+    "type": "green",
+    "imgUrl": "./charImage/green.png",
+    "id" : 2,
+    "price" : 5
+  },
+  {
+    "name": "Red",
+    "type": "red",
+    "imgUrl": "./charImage/red.png",
+    "id" : 3,
+    "price" : 5
+  },
+  {
+    "name": "Blue",
+    "type": "blue",
+    "imgUrl": "./charImage/blue.png",
+    "id" : 4,
+    "price" : 5
+  },
+  {
+    "name": "Purple",
+    "type": "purple",
+    "imgUrl": "./charImage/purple.png",
+    "id" : 5,
+    "price" : 5
+  }
+]

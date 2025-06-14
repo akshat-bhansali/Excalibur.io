@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Revolver",
+    "type": "Revolver",
+    "FIRE_RATE": 600,
+    "BULLET_SPEED": 22,
+    "DAMAGE": 18,
+    "MOVEMENT_SPEED": 202,
+    "imgUrl": "./guns/gun.png",
+    "price" : 100,
+    "id": 1
+  },
+  {
+    "name": "AK-47",
+    "type": "AK",
+    "FIRE_RATE": 120,
+    "BULLET_SPEED": 250,
+    "DAMAGE": 15,
+    "MOVEMENT_SPEED": 202,
+    "imgUrl": "./guns/gun2.png",
+    "price" : 100,
+    "id": 2
+  },
+  {
+    "name": "SMG",
+    "type": "SMG",
+    "FIRE_RATE": 100,
+    "BULLET_SPEED": 24,
+    "DAMAGE": 10,
+    "MOVEMENT_SPEED": 202,
+    "imgUrl": "./guns/gun3.png",
+    "price" : 100,
+    "id": 3
+  },
+  {
+    "name": "Shotgun",
+    "type": "Shotgun",
+    "FIRE_RATE": 700,
+    "BULLET_SPEED": 15,
+    "DAMAGE": 50,
+    "MOVEMENT_SPEED": 202,
+    "imgUrl": "./guns/gun4.png",
+    "price" : 100,
+    "id": 4
+  },
+  {
+    "name": "Sniper",
+    "type": "Sniper",
+    "FIRE_RATE": 900,
+    "BULLET_SPEED": 30,
+    "DAMAGE": 70,
+    "MOVEMENT_SPEED": 202,
+    "imgUrl": "./guns/gun5.png",
+    "price" : 100,
+    "id": 5
+  }
+]
