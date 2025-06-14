@@ -30,6 +30,7 @@ export const CharacterController = ({
   const character = useRef();
   const rigidbody = useRef();
   const [animation, setAnimation] = useState("Idle");
+  const [spacePressed, setSpacePressed] = useState(false);
   const [weapon, setWeapon] = useState(
     state?.state?.profile2?.weapon || "Pistol"
   );
@@ -112,8 +113,7 @@ export const CharacterController = ({
     }
 
     // Check if fire button is pressed
-    if (joystick.isPressed("fire")) {
-      // fire
+    if (joystick.isPressed("fire") || spacePressed) {
       setAnimation(
         joystick.isJoystickPressed() && angle ? "Run_Shoot" : "Idle_Shoot"
       );
@@ -130,6 +130,7 @@ export const CharacterController = ({
         }
       }
     }
+    
 
     if (joystick.isPressed("quit")) {
       if (!quitHandled.current) {
@@ -163,6 +164,23 @@ export const CharacterController = ({
     }
   }, [character.current]);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.code === "Space") setSpacePressed(true);
+    };
+    const handleKeyUp = (e) => {
+      if (e.code === "Space") setSpacePressed(false);
+    };
+  
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
+  
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
+    };
+  }, []);
+  
   return (
     <group {...props} ref={group}>
       {userPlayer && <CameraControls ref={controls} />}
